@@ -23,10 +23,8 @@ const RestaurantDetails: React.FC<RestaurantDetailsProps> = ({
   async function handleFetchRestaurantDetails() {
     setIsLoading(true);
     try {
-      console.log("here", restaurantId);
       const response = await getRestaurantDetails(restaurantId);
       setDetails(response.details);
-      console.log(details);
     } catch (error) {
       console.log(error);
       setDisplayErrorMessage(true);

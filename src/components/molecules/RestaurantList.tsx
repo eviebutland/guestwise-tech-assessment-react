@@ -70,9 +70,9 @@ const RestaurantList: React.FC<RestaurantListProps> = ({
     <div>
       <h2 className="p-8 text-xl">Restaurants</h2>
 
-      <div className="w-full px-8 flex space-x-2">
+      <div className="w-full px-8 md:flex gap-2">
         <input
-          className="border w-full"
+          className="border w-full p-2"
           value={searchQuery}
           placeholder="Filter restaurants by name"
           onChange={filterRestaurantsBySearchQuery}
@@ -83,7 +83,7 @@ const RestaurantList: React.FC<RestaurantListProps> = ({
         </Button>
       </div>
 
-      <div className="mt-6 px-8 flex space-x-2">
+      <div className="mt-6 px-8 flex flex-wrap gap-2">
         {ratings.map((rating) => (
           <Button
             key={rating}
@@ -96,7 +96,7 @@ const RestaurantList: React.FC<RestaurantListProps> = ({
       </div>
 
       {allRestaurants.length ? (
-        <ul className="p-8 grid grid-cols-4 gap-4">
+        <ul className="p-8 md:grid grid-cols-4 gap-4">
           {allRestaurants.map((restaurant) => (
             <li className="border rounded p-4" key={restaurant.id}>
               <a href={`/restaurant/${restaurant.id}`}>
