@@ -8,6 +8,8 @@ export const getRestaurants = async () => {
 };
 
 export const getRestaurantDetails = async (id: number) => {
+  console.log(id);
+  console.log("being called");
   try {
     const response = await fetch(`http://localhost:3001/restaurants/${id}`);
     return await response.json();
