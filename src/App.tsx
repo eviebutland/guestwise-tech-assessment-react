@@ -44,6 +44,7 @@ function App() {
     handleGetResturants();
   }
 
+  // TODO remove as not needed
   function handleDisplaySelectedRestaurant(id: number) {
     setSelectedRestaurantId(id);
   }
