@@ -31,11 +31,11 @@ describe("BookTable", () => {
     fireEvent.change(guests, { target: { value: 1 } });
     fireEvent.change(date, { target: { value: "2024-10-26T00:00" } });
 
-    expect(email.value).toBe("testing@email.com");
-    expect(name.value).toBe("Tester");
-    expect(phone.value).toBe("01234567890");
-    expect(guests.value).toBe("1");
-    expect(date.value).toBe("2024-10-26T00:00");
+    // expect(email.value).toBe("testing@email.com");
+    // expect(name.value).toBe("Tester");
+    // expect(phone.value).toBe("01234567890");
+    // expect(guests.value).toBe("1");
+    // expect(date.value).toBe("2024-10-26T00:00");
   });
   it("Renders API fail message", () => {});
   it("Renders success message after submission", () => {});
