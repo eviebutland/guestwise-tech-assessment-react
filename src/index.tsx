@@ -12,7 +12,7 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/restaurant/:restaurantid",
+    path: "/restaurant/:restaurantId",
     element: <Restaurant />,
   },
 ]);

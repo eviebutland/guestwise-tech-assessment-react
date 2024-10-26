@@ -79,8 +79,9 @@ const BookTable: React.FC = () => {
 
   return (
     <Container>
-      <h2>Book a Table</h2>
-      <form onSubmit={handleSubmit(submitForm)}>
+      <h2 className="text-lg font-bold">Book a Table</h2>
+      {/* onSubmit={handleSubmit(submitForm)} */}
+      <form>
         <FormField name="name" label="Your name" errors={errors?.name}>
           <input
             data-testid="name"
@@ -90,7 +91,6 @@ const BookTable: React.FC = () => {
             aria-invalid={errors.name ? "true" : "false"}
           />
         </FormField>
-
         <FormField name="email" errors={errors.email} label="Your email">
           <input
             data-testid="email"
@@ -100,7 +100,6 @@ const BookTable: React.FC = () => {
             aria-invalid={errors.email ? "true" : "false"}
           />
         </FormField>
-
         <FormField
           name="phone"
           label="Your phone number"
@@ -115,7 +114,6 @@ const BookTable: React.FC = () => {
             aria-invalid={errors.phone ? "true" : "false"}
           />
         </FormField>
-
         <br />
         <FormField label="Reservation date" name="date" errors={errors.date}>
           <input
@@ -128,7 +126,6 @@ const BookTable: React.FC = () => {
             aria-invalid={errors.email ? "true" : "false"}
           />
         </FormField>
-
         <FormField label="Reservation time" name="time" errors={errors.time}>
           <input
             className="border rounded p-2"
@@ -140,7 +137,6 @@ const BookTable: React.FC = () => {
             aria-invalid={errors.email ? "true" : "false"}
           />
         </FormField>
-
         <FormField
           name="guests"
           label="Number of guests"
@@ -156,7 +152,6 @@ const BookTable: React.FC = () => {
             aria-invalid={errors.guests ? "true" : "false"}
           />
         </FormField>
-
         <button type="submit">Book</button>
       </form>
     </Container>

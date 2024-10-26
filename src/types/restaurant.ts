@@ -7,7 +7,7 @@ export type Restaurant = {
   details: RestaurantDetailsData;
 };
 
-export type RestaurantDetailsData = {
+export interface RestaurantDetailsData {
   address: string;
   openingHours: {
     weekday: string;
@@ -15,4 +15,4 @@ export type RestaurantDetailsData = {
   };
   reviewScore: number;
   contactEmail: string;
-};
+}

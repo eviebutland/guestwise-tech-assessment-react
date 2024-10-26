@@ -2,6 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import RestaurantDetails from "../components/organisms/RestaurantDetails";
 import { Button } from "react-bootstrap";
+import BookTable from "../components/organisms/BookTable";
 
 const Restaurant = () => {
   const params = useParams();
@@ -9,6 +10,7 @@ const Restaurant = () => {
   const [restaurant, setRestaurant] = useState();
   const [isFirstLoad, setIsFirstLoad] = useState(true);
 
+  const restaurantId = Number(params.restaurantId);
   async function fetchUser() {
     // try {
     //   const response = await fetch("/api/users.json");
@@ -31,8 +33,10 @@ const Restaurant = () => {
   return (
     <div>
       <Button onClick={handleGoBack}>Go back</Button>
-      <RestaurantDetails restaurantId={Number(params.id)}></RestaurantDetails>
-      {/* book table here */}
+      <RestaurantDetails restaurantId={restaurantId}></RestaurantDetails>
+      <section className="pt-4">
+        <BookTable />
+      </section>
     </div>
   );
 };
