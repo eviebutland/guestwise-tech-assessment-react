@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Alert, Card, Container, Spinner } from "react-bootstrap";
 import { RestaurantDetailsData } from "../../types/restaurant";
 import { getRestaurantDetails } from "../../services/api";
-// import { getRestaurantDetails } from "../../services/api";
 
 type RestaurantDetailsProps = {
   restaurantId: number;
