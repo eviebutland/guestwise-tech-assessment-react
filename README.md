@@ -1,5 +1,13 @@
 <img width="300" alt="image" src="https://github.com/user-attachments/assets/1de0151b-8aa1-4570-b49d-1ffb6c37e13b">
 
+Thank you for the opportunity to work on this very fun project!
+
+I have lots of areas i'd love to improve on and build (as well as finish off the pieces i missed!)
+
+Thanks again,
+
+Evie
+
 # Guestwise React Technical Assessment
 
 ## Technical Test Brief
