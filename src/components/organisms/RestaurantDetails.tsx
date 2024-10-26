@@ -1,19 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Card, Container } from "react-bootstrap";
-import { getRestaurantDetails } from "../services/api";
+import { getRestaurantDetails } from "../../services/api";
 
 type RestaurantDetailsProps = {
   restaurantId: number;
-};
-
-type RestaurantDetailsData = {
-  address: string;
-  openingHours: {
-    weekday: string;
-    weekend: string;
-  };
-  reviewScore: number;
-  contactEmail: string;
 };
 
 const RestaurantDetails: React.FC<RestaurantDetailsProps> = ({
@@ -33,6 +23,7 @@ const RestaurantDetails: React.FC<RestaurantDetailsProps> = ({
 
   return (
     <Container>
+      in here?
       <Card>
         <Card.Body>
           <Card.Title>Restaurant Details</Card.Title>
